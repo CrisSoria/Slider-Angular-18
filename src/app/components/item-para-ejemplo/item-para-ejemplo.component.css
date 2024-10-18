@@ -1,0 +1,8 @@
+.slide {
+  padding: 50px;
+  /* border: 2px solid #141; */
+  height: 100%;
+}
+.slide h3 {
+  margin: 0;
+}
