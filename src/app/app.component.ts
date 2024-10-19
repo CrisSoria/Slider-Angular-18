@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SliderComponent } from "./components/slider/slider.component";
+import { SliderContainerComponent } from './components/slider-container/slider-container.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SliderComponent],
+  imports: [RouterOutlet, SliderContainerComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'carrusel-Angular18';

@@ -3,13 +3,15 @@
   <!-- el contContenido -->
   <div class="carruseles" [ngStyle]="currentStyles">
     <!-- el componente a carruselear -->
-    @for(slide of data; track $index; ){
+    @for(row of data; track $index; ){
+    @for(slide of row; track $index; ){
+
     <app-item-para-ejemplo
-      class="slider-section"
-      [slide]="slide"
-      [ngStyle]="{ width: widthSlice + '%' }"
-    />
-    }
+    class="slider-section"
+    [slide]="slide"
+    [ngStyle]="{ width: wSlide/row.length + '%' }"
+  />
+  }}
   </div>
   <div class="btn-left" (click)="moveToLeft()"><</div>
   <div class="btn-right" (click)="moveToRight()">></div>

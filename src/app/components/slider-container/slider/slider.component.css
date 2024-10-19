@@ -11,6 +11,7 @@
 }
 /*TODO contContenido */
 .carruseles {
+  opacity: 0.5;
   /* width: 2000%;   basado en el ancho del .container-carousel */
   height: 100%;
   display: flex;

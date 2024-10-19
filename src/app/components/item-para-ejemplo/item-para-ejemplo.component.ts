@@ -14,12 +14,12 @@ export class ItemParaEjemploComponent implements OnInit{
   aplicarColor(){
 
   }
-  currentStyles: Record<string, string> = {
+  colorStyles: Record<string, string> = {
     'background-color' : `black`
   };
   
   ngOnInit(): void {
-    this.currentStyles = {
+    this.colorStyles = {
       'background-color' : `#${this.slide.code}`
     }
   }

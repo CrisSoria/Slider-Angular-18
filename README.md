@@ -1,6 +1,18 @@
 # CarruselAngular18
 Carrusel con solamente Angular sin ninguna libreria extra
+## Utilización:
+1. Componentes: 
+	* slider-container
+	* slider
+2. Implementación:
+	* **itemsPerSlice** : cantidad de elementos que deseo mostrar por slice.
+	* **data** : array de elementos para el carrusel
+```js
+<app-slider-container [itemsPerSlice]="3" [data]="mockData"/>
+```
 ## Package
+Solamente Angular 18 con CSS
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
 
 ## Concepto de funcionamiento
@@ -27,3 +39,14 @@ imaginando que se acciona dos veces el boton derecho:
 
 der -> -33.3%
 der -> -66.6%
+
+##
+
+## Agregada la funcion de elegir la cantidad de items por slice
+1. El `slider-container` se encargará de procesar el array de datos para adecuarlo al requerimiento. Se forma una matriz y se agregan elementos nulos para iterarlos en la vista en caso de ser necesario.
+
+## Proximas Mejoras
+### - elegir el efecto de transicion
+puede ser sencillo solo pasarlo por parámetro y usarlo en la función `setCurrentStyles`
+### - responsive desing
+quizá lo mejor sea poner el whidth base en el "slider-container" ya que todo el resto va en % basandose en ese valor.
